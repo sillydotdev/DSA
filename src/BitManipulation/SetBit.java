@@ -1,3 +1,5 @@
+package BitManipulation;
+
 public class SetBit {
 
     public static int setBit(int n, int i) {

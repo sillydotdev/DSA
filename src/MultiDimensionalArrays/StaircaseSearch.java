@@ -1,3 +1,5 @@
+package MultiDimensionalArrays;
+
 public class StaircaseSearch {
 
     public static boolean staircaseSearch(int matrix[][], int target) {

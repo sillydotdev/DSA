@@ -1,3 +1,5 @@
+package DivideAndConquer;
+
 public class MergeSortStrings {
 
     public static String[] mergeSort(String Arr[], int si, int ei) {

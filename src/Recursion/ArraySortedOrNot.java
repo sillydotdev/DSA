@@ -1,3 +1,5 @@
+package Recursion;
+
 public class ArraySortedOrNot {
 
     public static boolean isSorted(int arr[], int i) {

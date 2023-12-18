@@ -1,3 +1,5 @@
+package BitManipulation;
+
 public class EvenOdd {
 
     public static void evenOdd(int n) {

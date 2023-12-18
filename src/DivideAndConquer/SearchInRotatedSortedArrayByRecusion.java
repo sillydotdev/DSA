@@ -1,3 +1,5 @@
+package DivideAndConquer;
+
 public class SearchInRotatedSortedArrayByRecusion {
 
     public static int searchInRotatedSortedArray(int arr[], int target, int low, int high) {

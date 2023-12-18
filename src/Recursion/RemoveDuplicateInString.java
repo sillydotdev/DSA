@@ -1,3 +1,5 @@
+package Recursion;
+
 public class RemoveDuplicateInString {
 
     public static void removeDuplicateInString(String str, int index, StringBuilder newStr, boolean map[]) {

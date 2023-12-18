@@ -1,3 +1,5 @@
+package BasicSortingAlgorithms;
+
 public class CountingSort {
 
     public static void countingSort(int arr[]) {

@@ -1,3 +1,5 @@
+package MultiDimensionalArrays;
+
 public class DiagonalSum {
 
     public static int diagonalSum(int matrix[][]) {
