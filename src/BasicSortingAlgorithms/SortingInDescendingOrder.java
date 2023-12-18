@@ -1,5 +1,3 @@
-package BasicSortingAlgorithms;
-
 /*
  * All sorting algorithms in descending order.
  * 1. Bubble sort

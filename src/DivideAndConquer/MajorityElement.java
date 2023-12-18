@@ -1,4 +1,4 @@
-package DivideAndConquer;/*
+/*
  * Majority element in an array
  */
 

@@ -1,5 +1,3 @@
-package MultiplePatterns;
-
 public class Patterns {
 
 // * * * *   

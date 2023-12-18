@@ -1,4 +1,4 @@
-package DivideAndConquer;/*
+/*
  * Inversion count of an array
  */
 

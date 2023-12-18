@@ -1,5 +1,3 @@
-package Recursion;
-
 public class NumbersInIncreasingOrder {
 
     public static void  printNum(int n) {

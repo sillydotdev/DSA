@@ -1,5 +1,3 @@
-package MultiplePatterns;
-
 /*
 ------------
    A 

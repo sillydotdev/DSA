@@ -1,5 +1,3 @@
-package MultiDimensionalArrays;
-
 public class SpiratMatrix {
 
     public static void spiralMatrix(int matrix[][]) {

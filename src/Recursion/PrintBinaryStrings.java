@@ -1,5 +1,3 @@
-package Recursion;
-
 public class PrintBinaryStrings {
 
     public static void printBinaryStrings(int n, int lastPlace, String str) {

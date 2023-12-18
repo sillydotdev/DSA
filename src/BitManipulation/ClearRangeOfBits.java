@@ -1,5 +1,3 @@
-package BitManipulation;
-
 public class ClearRangeOfBits {
 
     public static int clearRangeOfBits (int n, int i, int j) {

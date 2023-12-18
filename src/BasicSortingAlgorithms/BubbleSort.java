@@ -1,4 +1,3 @@
-package BasicSortingAlgorithms;
 
 public class BubbleSort {
 

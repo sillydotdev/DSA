@@ -1,5 +1,3 @@
-package BitManipulation;
-
 public class ClearIBits {
 
     public static int clearIBits(int n, int i) {

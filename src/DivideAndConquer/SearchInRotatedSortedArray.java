@@ -1,5 +1,3 @@
-package DivideAndConquer;
-
 public class SearchInRotatedSortedArray {
     public static int searchInRotatedSortedArray(int arr[], int target) {
         int low = 0, high = arr.length-1;

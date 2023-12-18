@@ -1,5 +1,3 @@
-package Recursion;
-
 public class NumberToEnglish {
 
     static String digits[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};

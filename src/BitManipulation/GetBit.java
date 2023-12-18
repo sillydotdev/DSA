@@ -1,5 +1,3 @@
-package BitManipulation;
-
 public class GetBit {
 
     public static int getBit(int n, int i) {

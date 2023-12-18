@@ -1,4 +1,4 @@
-package MultiplePatterns;/*
+/*
  * Advanced Patterns
  */
 

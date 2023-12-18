@@ -1,5 +1,3 @@
-package Recursion;
-
 public class TilingProblem {
 
     public static int tilingProblem(int n) {

@@ -1,5 +1,3 @@
-package BitManipulation;
-
 public class FastExponentiation {
     public static int fastExponentiation(int a, int n){
         int ans = 1;

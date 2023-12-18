@@ -1,5 +1,3 @@
-package Recursion;
-
 public class StringsWithSameFirstLastIndex {
     public static int stringsWithSameFirstLastIndex(String str, int i, int j, int n) {
         if(n <= 0) {

@@ -1,5 +1,3 @@
-package Recursion;
-
 public class FirstOccurenceOfElement {
 
     public static int firstOccurence(int arr[], int key, int i) {
