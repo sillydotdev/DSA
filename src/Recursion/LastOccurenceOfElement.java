@@ -1,3 +1,5 @@
+package Recursion;
+
 public class LastOccurenceOfElement {
 
     public static int lastOccurence(int arr[], int key, int i){

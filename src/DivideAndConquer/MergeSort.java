@@ -1,3 +1,5 @@
+package DivideAndConquer;
+
 public class MergeSort {
 
     public static void mergrSort(int arr[], int si, int ei) {

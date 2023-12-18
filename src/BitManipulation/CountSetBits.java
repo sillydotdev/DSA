@@ -1,3 +1,5 @@
+package BitManipulation;
+
 public class CountSetBits {
 
     public static int countSetBits(int n) {

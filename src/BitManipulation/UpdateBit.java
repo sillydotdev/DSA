@@ -1,3 +1,5 @@
+package BitManipulation;
+
 public class UpdateBit {
 
     public static int updateBit(int n, int i, int newBit) {

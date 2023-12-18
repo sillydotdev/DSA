@@ -1,3 +1,5 @@
+package Recursion;
+
 public class IndicesOfElement {
 
     public static void indicesOfElement(int arr[], int key, int i) {
