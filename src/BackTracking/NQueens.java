@@ -1,4 +1,4 @@
-// Print the ways in which we can place "n" Queens in an "nxn" chess board. Also count the number of ways
+// 2. Print the ways in which we can place "n" Queens in an "nxn" chess board. Also count the number of ways
 package BackTracking;
 
 public class NQueens {

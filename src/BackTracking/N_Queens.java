@@ -1,4 +1,4 @@
-// Return true of false if there is a way in which we can place "n" Queens in an "nxn" chess board. Also print one way
+// 1. Return true of false if there is a way in which we can place "n" Queens in an "nxn" chess board. Also print one way
 package BackTracking;
 
 public class N_Queens {
