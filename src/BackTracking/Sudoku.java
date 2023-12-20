@@ -1,3 +1,5 @@
+package BackTracking;
+
 public class Sudoku {
     public static boolean isSafe(int arr[][], int row, int col, int digit){
         // column
