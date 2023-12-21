@@ -1,3 +1,4 @@
+// sort ArrayList in ascending order and descending order
 package ArrayLists;
 
 import java.util.ArrayList;
