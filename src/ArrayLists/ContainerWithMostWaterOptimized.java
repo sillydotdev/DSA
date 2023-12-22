@@ -3,6 +3,7 @@ package ArrayLists;
 import java.util.ArrayList;
 
 public class ContainerWithMostWaterOptimized {
+    // Optimize------ TC = O(n)
     public static int storeWater(ArrayList<Integer> height) {
         int leftPointer = 0, rightPointer = height.size()-1;
         int maxWater = 0;
