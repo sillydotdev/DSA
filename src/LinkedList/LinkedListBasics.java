@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class CreateLinkedList {
+public class LinkedListBasics {
     // inner class to create a NODE for LinkedList
     public static class Node {
         int data;
@@ -12,10 +12,12 @@ public class CreateLinkedList {
     }
     public static Node head;
     public static Node tail;
+    public static int size;
     // add Node at the head -------- TC = O(1)
     public void addFirst(int data) {
         // step-1: create a new Node
         Node newNode = new Node(data);
+        size++;
         if(head == null) {  // if there is no node in the linkedList in the first place
             head = tail = newNode;
             return;
@@ -28,10 +30,11 @@ public class CreateLinkedList {
 
     // add node at the tail -------- TC = O(1)
     public void addLast(int data) {
+        Node newNode = new Node(data);
+        size++;
         if(head == null) {
             System.out.println("LinkedList is empty");
         }
-        Node newNode = new Node(data);
         if(head == null) {  // we don't write tail == null because by convention we always check it by head == null
             head = tail = newNode;
             return;
@@ -57,6 +60,7 @@ public class CreateLinkedList {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i = 0;
         while(i < index - 1) {
@@ -66,8 +70,25 @@ public class CreateLinkedList {
         newNode.next = temp.next;   // temp is previous, so new node's next will point to temp's next
         temp.next = newNode;    // after then temp next will point to newNode
     }
+
+    // remove head in linkList
+    public int removeFirst() {
+        if(size == 0) {
+            System.out.println("LinkedList is empty.");
+            return Integer.MIN_VALUE;
+        } else if (size == 1) {
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+    }
     public static void main(String[] args) {
-        CreateLinkedList ll = new CreateLinkedList();   // LinkedList is created
+        LinkedListBasics ll = new LinkedListBasics();   // LinkedList is created
         ll.addFirst(3);
         ll.addFirst(2);
         ll.addFirst(1);
@@ -76,6 +97,9 @@ public class CreateLinkedList {
         ll.addLast(6);
 
         ll.add(2, 9);
+        ll.print();
+        System.out.println(ll.size);
+        ll.removeFirst();
         ll.print();
     }
 }
