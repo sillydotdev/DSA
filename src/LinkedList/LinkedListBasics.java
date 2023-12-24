@@ -32,9 +32,6 @@ public class LinkedListBasics {
     public void addLast(int data) {
         Node newNode = new Node(data);
         size++;
-        if(head == null) {
-            System.out.println("LinkedList is empty");
-        }
         if(head == null) {  // we don't write tail == null because by convention we always check it by head == null
             head = tail = newNode;
             return;
