@@ -53,6 +53,29 @@ public class ReverseLinkedList {
         }
         head = prev;    // ultimately prev reaches last element and is declared as head
     }
+
+    // Remove nth element from the end
+    public void removeNthFromEnd(int n) {
+        // calculating size of LinkedList
+        int lengthOfLinkedList = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            lengthOfLinkedList++;
+        }
+
+        if(n == lengthOfLinkedList) {   // removing head from the end
+            head = head.next;
+            return;
+        }
+        Node prev = head;
+        for(int i=1; i<lengthOfLinkedList - n; i++) {   // i<lengthOfLinkedList - n because to find the node n(which is to be removed),
+            prev = prev.next;                           // from the end, we can use the formula: size-n+1 to find that nth element from the head.
+            i++;                                        // since we can not traverse from end of a linkedList
+        }
+        prev.next = prev.next.next;
+        return;
+    }
     public static void main(String[] args) {
         ReverseLinkedList ll = new ReverseLinkedList();   // LinkedList is created
         ll.addFirst(6);
@@ -64,8 +87,8 @@ public class ReverseLinkedList {
 
         ll.print();
 
-        ll.reverse();   // reverse method called
-
+//        ll.reverse();   // reverse method called
+        ll.removeNthFromEnd(3);
         ll.print();     // LinkedList after reversed
 
     }
