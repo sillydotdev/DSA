@@ -45,7 +45,7 @@ public class MergeSortLinkedList {
         Node fast = head.next;  // .next so that the mid will be the last element of left half
         while (fast != null && fast.next != null) {
             slow = slow.next;
-            fast = fast.next;
+            fast = fast.next.next;
         }
         return slow;
     }
