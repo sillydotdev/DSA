@@ -54,6 +54,20 @@ public class DoublyLinkedList {
         size--;
         return val;
     }
+
+    public void reverse() {
+        Node prev = null;
+        Node curr = head;
+        Node next;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            curr.prev = next;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
     public static void main(String[] args) {
         DoublyLinkedList dll = new DoublyLinkedList();
         dll.addFirst(6);
@@ -68,6 +82,9 @@ public class DoublyLinkedList {
         System.out.println("Size of LinkedList is: "+dll.size);
         System.out.println("Removed first element: "+dll.removeFirst()+" form the LinkedList.");
         System.out.println("Size of LinkedList after removing an element: "+dll.size);
+        dll.print();
+
+        dll.reverse();
         dll.print();
 
     }
