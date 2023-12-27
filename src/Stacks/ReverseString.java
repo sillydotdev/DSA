@@ -14,6 +14,7 @@ public class ReverseString {
             char curr = stack.pop();
             result.append(curr);
         }
+//        str = result.toString();
         return result.toString();
     }
     public static void main(String[] args) {
