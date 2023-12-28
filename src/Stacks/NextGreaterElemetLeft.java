@@ -1,12 +1,11 @@
-// Next greater element towards right
 package Stacks;
 
 import java.util.Stack;
 
-public class NextGreaterElement {
+public class NextGreaterElemetLeft {
     public static void nextGreaterElment(int arr[], int nextGreater[]) {
         Stack<Integer> stack = new Stack<>();
-        for (int i = arr.length-1; i >= 0; i--) {
+        for (int i = 0; i < arr.length; i++) {
             while (!stack.isEmpty() && arr[stack.peek()] <= arr[i]) {   // whilst stack is not empty and peek is less than the element
                 stack.pop();                                            // pop rom the stack
             }
