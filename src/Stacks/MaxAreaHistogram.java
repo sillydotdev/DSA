@@ -48,7 +48,7 @@ public class MaxAreaHistogram {
     }
     public static void main(String[] args) {
         int heights[] = {2, 1, 5, 6, 2, 3};
-//        int heights[] = {2, 4};
+//        int heights[] = {9, 0};
         maxAreaHistogram(heights);
     }
 }
