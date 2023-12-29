@@ -21,9 +21,9 @@ public class MaxAreaHistogram {
             }
             s.push(i);
         }
-
+//        s = new Stack<>();
+        s.clear();  // clear stack for reuse
         // next smaller on left
-        s = new Stack<>();
         for (int i = 0; i < heights.length; i++) {
             while (!s.isEmpty() && heights[s.peek()] >= heights[i]) {
                 s.pop();
