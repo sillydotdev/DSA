@@ -1,3 +1,4 @@
+// Stack using 2 Queues ---- pop and peek = O(n)
 package Queues;
 
 import java.util.LinkedList;
