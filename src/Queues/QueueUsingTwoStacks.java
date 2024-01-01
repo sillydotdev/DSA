@@ -9,7 +9,7 @@ public class QueueUsingTwoStacks {
         static Stack<Integer> s2 = new Stack<>();
 
         static boolean isEmpty() {
-            return s1.isEmpty();
+            return s1.isEmpty() && s2.isEmpty();
         }
 
         // add
@@ -21,21 +21,17 @@ public class QueueUsingTwoStacks {
         static int remove() {
             if (s2.isEmpty()) {
                 while (!s1.isEmpty()) {
-                    s2.push(s1.peek());
-                    s1.pop();
+                    s2.push(s1.pop());
                 }
             }
-            int x = s2.peek();
-            s2.pop();
-            return x;
+            return s2.pop();
         }
 
         // peek
         static int peek() {
             if (s2.isEmpty()) {
                 while (!s1.isEmpty()) {
-                    s2.push(s1.peek());
-                    s1.pop();
+                    s2.push(s1.pop());
                 }
             }
             return s2.peek();
