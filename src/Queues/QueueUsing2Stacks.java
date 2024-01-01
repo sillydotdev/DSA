@@ -1,3 +1,4 @@
+// push or add operation is done in  O(n)
 package Queues;
 
 import java.util.Stack;
