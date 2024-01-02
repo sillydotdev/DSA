@@ -16,12 +16,12 @@ public class FractionalKnapsack {
         }
 
         // sort on ratio
-        Arrays.sort(ratio, Comparator.comparingDouble(o -> o[1]));
+        Arrays.sort(ratio, Comparator.comparingDouble(o -> o[1]));  // ratios sorted in ascending order
 
         int capacity = w;
         int finalValue = 0;
 
-        for (int i = ratio.length-1; i >= 0; i--) {
+        for (int i = ratio.length-1; i >= 0; i--) { // as we need ratios in descending order, so we loop it from the end
             int index = (int)ratio[i][0];
             if(capacity >= weight[index]) {
                 finalValue += value[index];
