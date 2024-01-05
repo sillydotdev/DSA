@@ -5,18 +5,43 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class KthLargestOddNumberInRange {
-    public static int largestOddNumberInRange(int lowerBound, int upperBound, int k) {
-        ArrayList<Integer> arr = new ArrayList<>();
 
-        for (int i = lowerBound; i <= upperBound; i++) {
+    // using ArrayList
+//    public static int largestOddNumberInRange(int lowerBound, int upperBound, int k) {
+//        ArrayList<Integer> arr = new ArrayList<>();
+//
+//        for (int i = lowerBound; i <= upperBound; i++) {
+//            if (i % 2 != 0) {
+//                arr.add(i);
+//            }
+//        }
+//        Collections.sort(arr, Comparator.reverseOrder());
+//        if (k <= arr.size()) {
+//            return arr.get(k - 1);
+//        } else {
+//            return -1;
+//        }
+
+    // without using additional arrayList
+    public static int largestOddNumberInRange(int lowerBound, int upperBound, int k) {
+        int countOdd = 0;
+        int kthOddNumber = 0;
+
+        for (int i = upperBound; i >= lowerBound; i--) {
             if (i % 2 != 0) {
-                arr.add(i);
+                countOdd++;
+
+                if (countOdd == k) {
+                    kthOddNumber = i;
+                    break;
+                }
             }
         }
-        Collections.sort(arr, Comparator.reverseOrder());
-        if (k <= arr.size()) {
-            return arr.get(k - 1);
-        } else {
+//        return  (k <= countOdd) ? kthOddNumber : -1;
+        if (k <= countOdd) {
+            return kthOddNumber;
+        }
+        else {
             return -1;
         }
     }
