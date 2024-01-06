@@ -35,6 +35,7 @@
 12. Divide and Conquer
 13. Backtracking
 14. ArrayList
-14. LinkedList
-15. Stacks
-16. Queues
+15. LinkedList
+16. Stacks
+17. Queues
+18. Greedy Approach
