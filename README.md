@@ -25,4 +25,7 @@
 2. Conditional Statements
 3. Loops
 4. Methods/Functions
-5. 
+5. Arrays
+6. Multi-dimensional Arrays
+7. Patterns
+8. Basic Sorting Algorithms
