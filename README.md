@@ -17,4 +17,12 @@
 
 
 
+
 "All the code files are in JAVA language."
+
+## TOPICS Covered:
+1. Variables, Data types and Operators
+2. Conditional Statements
+3. Loops
+4. Methods/Functions
+5. 
