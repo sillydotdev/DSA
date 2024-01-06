@@ -28,4 +28,13 @@
 5. Arrays
 6. Multi-dimensional Arrays
 7. Patterns
-8. Basic Sorting Algorithms
+8. Strings
+9. Basic Sorting Algorithms
+10. Bit Manipulation
+11. Recursion
+12. Divide and Conquer
+13. Backtracking
+14. ArrayList
+14. LinkedList
+15. Stacks
+16. Queues
