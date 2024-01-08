@@ -39,6 +39,28 @@ public class DiameterOfTree {
 
         return Math.max(selfDiameter, Math.max(leftDiameter, rightDiameter));
     }
+
+    // Optimized code for diameter of a tree
+    static class Info {
+        int diameter;
+        int height;
+        Info(int diameter, int height) {
+            this.diameter = diameter;
+            this.height = height;
+        }
+    }
+    public static Info diameterOptimized(Node root) {
+        if (root == null) {
+            return new Info(0, 0);
+        }
+        Info leftInfo = diameterOptimized(root.left);
+        Info rightInfo = diameterOptimized(root.right);
+
+        int diameter = Math.max(Math.max(leftInfo.diameter, rightInfo.diameter), leftInfo.height + rightInfo.height + 1);
+        int height = Math.max(leftInfo.height, rightInfo.height) + 1;
+
+        return new Info(diameter, height);
+    }
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
@@ -49,5 +71,6 @@ public class DiameterOfTree {
         root.right.right = new Node(7);
 
         System.out.println(diameter(root));
+        System.out.println(diameterOptimized(root).diameter);
     }
 }
