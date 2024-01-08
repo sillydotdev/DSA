@@ -39,3 +39,4 @@
 16. Stacks
 17. Queues
 18. Greedy Approach
+19. Binary Trees
