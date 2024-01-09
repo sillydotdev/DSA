@@ -57,7 +57,7 @@ public class TopViewOfTree {
         }
 
         for (int i = min; i <= max; i++) {
-            System.out.print(map.get(i).data+" ");
+            System.out.print(map.get(i).data+" "); // map.get(i).data because map.get(i) will give node but we need its data
         }
         System.out.println();
     }
