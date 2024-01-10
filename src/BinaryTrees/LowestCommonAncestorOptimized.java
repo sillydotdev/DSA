@@ -16,6 +16,8 @@ public class LowestCommonAncestorOptimized  {
     /*
      *  Time complexity = O(n)
      *  Space complexity = O(1)
+     * But if we count the space taken by Recursion stack, then Space complexity = O(n)
+     * However no auxiliary space was used
      * */
     public static Node lowestCommomAncestor(Node root, int n1, int n2) {
 //        if (root == null) {
