@@ -14,6 +14,10 @@ public class LowestCommonAncestor  {
         }
     }
 
+    /*
+    *  Time complexity = O(n)
+    *  Space complexity = O(n)
+    * */
     public static boolean getPath(Node root, int n, ArrayList<Node> path) { // function to calculate the path of node
         if (root == null) {
             return false;
