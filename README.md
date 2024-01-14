@@ -40,3 +40,4 @@
 17. Queues
 18. Greedy Approach
 19. Binary Trees
+20. Binary Search Trees (BST)
