@@ -1,7 +1,7 @@
 package BinarySearchTrees;
 
 public class DeleteNode {
-    static class Node {
+    public static class Node {
         int data;
         Node left;
         Node right;
