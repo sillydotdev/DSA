@@ -9,18 +9,21 @@ public class BuildBST {
             this.data = data;
         }
     }
+    // Build a BST
     public static Node insert(Node root, int val) {
         if (root == null) {
-            root = new Node(val);
+            root = new Node(val);   // insert at root
             return root;
         }
         if (root.data > val) {
-            root.left = insert(root.left, val);
+            root.left = insert(root.left, val); // if value is less than root, insert on the left side
         } else {
-            root.right = insert(root.right, val);
+            root.right = insert(root.right, val);   // else insert on the right side
         }
         return root;
     }
+
+    // inorder traversal
     public static void inorder(Node root) {
         if (root == null) {
             return;
