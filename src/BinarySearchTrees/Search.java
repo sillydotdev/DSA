@@ -29,7 +29,7 @@ public class Search {
         System.out.print(root.data+" ");
         inorder(root.right);
     }
-
+    // Search a node from BST
     public static boolean search(Node root, int key) {
         if (root == null) {
             return false;
