@@ -1,7 +1,7 @@
 package BinarySearchTrees;
 
 public class AVLTree {
-    static class Node {
+    static class Node { // class to create a node in AVL Tree
         int data, height;
         Node left, right;
         public Node(int data) {
@@ -12,6 +12,7 @@ public class AVLTree {
 
     public static Node root;
 
+    // height of each node
     public static int height(Node root) {
         if (root == null) {
             return 0;
