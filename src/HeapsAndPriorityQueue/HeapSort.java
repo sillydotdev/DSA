@@ -3,7 +3,7 @@ package HeapsAndPriorityQueue;
 public class HeapSort {
 
     // Heapify - create maxHeap
-    public static void heapify(int arr[], int i, int size) {
+    public static void heapify(int arr[], int i, int size) {    // O(nlogn)
         int left = 2 * i + 1;
         int right = 2 * i + 2;
         int maxIndex = i;
@@ -25,7 +25,7 @@ public class HeapSort {
     }
 
     // Heap sort
-    public static void heapSort(int arr[]) {
+    public static void heapSort(int arr[]) {    // O(nlogn)
         // step - 1: Build maxHeap
         int n = arr.length;
         for (int i = n/2; i >= 0; i--) {
