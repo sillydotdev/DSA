@@ -41,3 +41,5 @@
 18. Greedy Approach
 19. Binary Trees
 20. Binary Search Trees (BST)
+21. Priority Queues
+22. Heaps
