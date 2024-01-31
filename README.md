@@ -43,3 +43,4 @@
 20. Binary Search Trees (BST)
 21. Priority Queues
 22. Heaps
+23. Hashing
