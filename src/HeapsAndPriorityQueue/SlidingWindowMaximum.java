@@ -7,5 +7,9 @@ public class SlidingWindowMaximum {
             System.out.print(arr[i]+" ");
         }
         System.out.println();
+
+        int a = 10, b = 90;
+        int c = a + b;
+        System.out.println(c);
     }
 }
