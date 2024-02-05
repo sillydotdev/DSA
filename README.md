@@ -44,3 +44,4 @@
 21. Priority Queues
 22. Heaps
 23. Hashing
+24. Graphs
