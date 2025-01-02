@@ -13,7 +13,7 @@ public class Prefix_Sum {
 
         for(int i=0; i<numbers.length; i++){
             for(int j=i; j<numbers.length; j++){
-                sum = i==0 ? prefix[j] : prefix[j] - prefix[i-1];
+                sum = i == 0 ? prefix[j] : prefix[j] - prefix[i-1];
 
                 if(maxSum < sum){
                     maxSum = sum;
@@ -24,7 +24,8 @@ public class Prefix_Sum {
     }
 
     public static void main(String args[]){
-        int numbers[] = {1, -2, 6, -1, 3};
+//        int numbers[] = {1, -2, 6, -1, 3};
+        int numbers[] = {2, 4, 6, 7, 8, 9, 2, 5};
         printSubArray(numbers);
     }
     

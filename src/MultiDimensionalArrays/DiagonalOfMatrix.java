@@ -28,7 +28,7 @@ public class DiagonalOfMatrix {
             sum += matrix[i][i];
 
             //Secondary diagonal
-            if(i != matrix[i][matrix.length-i-1])
+            if(i != matrix.length-i-1)
                 sum += matrix[i][matrix.length-i-1];
         }
         return sum;
